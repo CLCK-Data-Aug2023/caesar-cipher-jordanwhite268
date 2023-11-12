@@ -43,14 +43,14 @@ right_shift_5 = {
     "4":"4",
     "5":"5",
     "6":"6",
-    "7":"7", "8":"8","9":"9","0":"0"
+    "7":"7", "8":"8","9":"9","0":"0", ".":"."
     
 }
 sentence = sentence.lower()
+encrypted_sent = []
 for l in sentence:
-    print( right_shift_5[l], end="")
+    encrypted_sent.append(right_shift_5[l])
 
-
-
+print("The encrypted sentence is:", "".join(encrypted_sent))
    
               
